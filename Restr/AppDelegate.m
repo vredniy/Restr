@@ -14,8 +14,19 @@
 {
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     [statusItem setMenu:statusMenu];
-    [statusItem setTitle:@"Restr"];
+    //[statusItem setTitle:@"Restr"];
     [statusItem setHighlightMode:YES];
+    
+    NSImage *statusImage = [NSImage imageNamed:@"crying_baby.png"];
+    [statusItem setImage:statusImage];
+    
+    NSTimer *timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(shortBreak:) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+}
+
+- (void)shortBreak:(id)sender
+{
+    NSLog(@"hello");
 }
 
 @end

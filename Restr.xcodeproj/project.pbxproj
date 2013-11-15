@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7190DB9718365C5F0053A408 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7190DB9618365C5F0053A408 /* Images.xcassets */; };
 		71FC1D5518364C0200012474 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FC1D5418364C0200012474 /* Cocoa.framework */; };
 		71FC1D5F18364C0200012474 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71FC1D5D18364C0200012474 /* InfoPlist.strings */; };
 		71FC1D6118364C0200012474 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FC1D6018364C0200012474 /* main.m */; };
 		71FC1D6518364C0200012474 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 71FC1D6318364C0200012474 /* Credits.rtf */; };
 		71FC1D6818364C0200012474 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FC1D6718364C0200012474 /* AppDelegate.m */; };
 		71FC1D6B18364C0200012474 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71FC1D6918364C0200012474 /* MainMenu.xib */; };
-		71FC1D6D18364C0200012474 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71FC1D6C18364C0200012474 /* Images.xcassets */; };
 		71FC1D7418364C0200012474 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FC1D7318364C0200012474 /* XCTest.framework */; };
 		71FC1D7518364C0200012474 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FC1D5418364C0200012474 /* Cocoa.framework */; };
 		71FC1D7D18364C0200012474 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71FC1D7B18364C0200012474 /* InfoPlist.strings */; };
@@ -31,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7190DB9618365C5F0053A408 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		71FC1D5118364C0200012474 /* Restr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71FC1D5418364C0200012474 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		71FC1D5718364C0200012474 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -44,7 +45,6 @@
 		71FC1D6618364C0200012474 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71FC1D6718364C0200012474 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		71FC1D6A18364C0200012474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		71FC1D6C18364C0200012474 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		71FC1D7218364C0200012474 /* RestrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71FC1D7318364C0200012474 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		71FC1D7A18364C0200012474 /* RestrTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RestrTests-Info.plist"; sourceTree = "<group>"; };
@@ -115,10 +115,10 @@
 		71FC1D5A18364C0200012474 /* Restr */ = {
 			isa = PBXGroup;
 			children = (
+				7190DB9618365C5F0053A408 /* Images.xcassets */,
 				71FC1D6618364C0200012474 /* AppDelegate.h */,
 				71FC1D6718364C0200012474 /* AppDelegate.m */,
 				71FC1D6918364C0200012474 /* MainMenu.xib */,
-				71FC1D6C18364C0200012474 /* Images.xcassets */,
 				71FC1D5B18364C0200012474 /* Supporting Files */,
 			);
 			path = Restr;
@@ -231,7 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71FC1D5F18364C0200012474 /* InfoPlist.strings in Resources */,
-				71FC1D6D18364C0200012474 /* Images.xcassets in Resources */,
+				7190DB9718365C5F0053A408 /* Images.xcassets in Resources */,
 				71FC1D6518364C0200012474 /* Credits.rtf in Resources */,
 				71FC1D6B18364C0200012474 /* MainMenu.xib in Resources */,
 			);
@@ -466,6 +466,7 @@
 				71FC1D8418364C0200012474 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71FC1D8518364C0200012474 /* Build configuration list for PBXNativeTarget "RestrTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +475,7 @@
 				71FC1D8718364C0200012474 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
