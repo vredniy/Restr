@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "SettingsWindowController.h"
 
 @implementation AppDelegate
+
+@synthesize settingsWindowController;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -20,13 +23,30 @@
     NSImage *statusImage = [NSImage imageNamed:@"crying_baby.png"];
     [statusItem setImage:statusImage];
     
-    NSTimer *timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(shortBreak:) userInfo:nil repeats:YES];
-    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+    //timer = [NSTimer timerWithTimeInterval:1 target:self selector:@selector(shortBreak:) userInfo:nil repeats:YES];
+    //[[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+    
+    timer = [[Timer alloc] init];
+    timer.shortBreaksEvery = 10;
+    timer.shortBreaksFor = 3;
+    timer.callee = self;
+    timer.selector = @selector(shortBreak:);
+    [timer restart];
+    
 }
 
 - (void)shortBreak:(id)sender
 {
-    NSLog(@"hello");
+    NSAlert *alert = [[NSAlert alloc] init];
+    [alert setMessageText:@"ShortBreak"];
+    [alert runModal];
+     [timer restart];
 }
 
+- (IBAction)settingsClicked:(id)sender {
+    settingsWindowController = [[SettingsWindowController alloc] init];
+    [settingsWindowController showWindow:self];
+}
 @end
+
+

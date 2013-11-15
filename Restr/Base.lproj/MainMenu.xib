@@ -657,6 +657,9 @@
             <items>
                 <menuItem title="Settings" id="eFu-JZ-9Z0">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="settingsClicked:" target="494" id="oUs-gH-31G"/>
+                    </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="v7A-Pm-juB"/>
                 <menuItem title="Quit" id="Ch8-2e-qCc">

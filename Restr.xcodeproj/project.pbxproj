@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7190DB9718365C5F0053A408 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7190DB9618365C5F0053A408 /* Images.xcassets */; };
+		71FB5CC318369A5500615C86 /* SettingsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FB5CC118369A5500615C86 /* SettingsWindowController.m */; };
+		71FB5CC418369A5500615C86 /* SettingsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71FB5CC218369A5500615C86 /* SettingsWindowController.xib */; };
+		71FB5CC71836B1CA00615C86 /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FB5CC61836B1CA00615C86 /* Timer.m */; };
 		71FC1D5518364C0200012474 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FC1D5418364C0200012474 /* Cocoa.framework */; };
 		71FC1D5F18364C0200012474 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71FC1D5D18364C0200012474 /* InfoPlist.strings */; };
 		71FC1D6118364C0200012474 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FC1D6018364C0200012474 /* main.m */; };
@@ -32,6 +35,11 @@
 
 /* Begin PBXFileReference section */
 		7190DB9618365C5F0053A408 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
+		71FB5CC018369A5500615C86 /* SettingsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsWindowController.h; sourceTree = "<group>"; };
+		71FB5CC118369A5500615C86 /* SettingsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsWindowController.m; sourceTree = "<group>"; };
+		71FB5CC218369A5500615C86 /* SettingsWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsWindowController.xib; sourceTree = "<group>"; };
+		71FB5CC51836B1CA00615C86 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		71FB5CC61836B1CA00615C86 /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
 		71FC1D5118364C0200012474 /* Restr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71FC1D5418364C0200012474 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		71FC1D5718364C0200012474 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -119,6 +127,11 @@
 				71FC1D6618364C0200012474 /* AppDelegate.h */,
 				71FC1D6718364C0200012474 /* AppDelegate.m */,
 				71FC1D6918364C0200012474 /* MainMenu.xib */,
+				71FB5CC018369A5500615C86 /* SettingsWindowController.h */,
+				71FB5CC118369A5500615C86 /* SettingsWindowController.m */,
+				71FB5CC218369A5500615C86 /* SettingsWindowController.xib */,
+				71FB5CC51836B1CA00615C86 /* Timer.h */,
+				71FB5CC61836B1CA00615C86 /* Timer.m */,
 				71FC1D5B18364C0200012474 /* Supporting Files */,
 			);
 			path = Restr;
@@ -231,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71FC1D5F18364C0200012474 /* InfoPlist.strings in Resources */,
+				71FB5CC418369A5500615C86 /* SettingsWindowController.xib in Resources */,
 				7190DB9718365C5F0053A408 /* Images.xcassets in Resources */,
 				71FC1D6518364C0200012474 /* Credits.rtf in Resources */,
 				71FC1D6B18364C0200012474 /* MainMenu.xib in Resources */,
@@ -253,7 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				71FC1D6818364C0200012474 /* AppDelegate.m in Sources */,
+				71FB5CC318369A5500615C86 /* SettingsWindowController.m in Sources */,
 				71FC1D6118364C0200012474 /* main.m in Sources */,
+				71FB5CC71836B1CA00615C86 /* Timer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
