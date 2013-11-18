@@ -28,6 +28,7 @@
 {
     NSLog(@"begin showing message");
     wc = [[DZWindowController alloc] initWithWindowNibName:@"DZWindowController"];
+    
     [wc showWindow:self];
     
     [self startSecondTimer];
