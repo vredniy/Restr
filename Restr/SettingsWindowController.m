@@ -25,7 +25,7 @@
     NSLog(@"%@", self.shortBreaksEverySelect.stringValue);
 }
 - (IBAction)shortBreaksEverySelectClicked:(id)sender {
-    NSLog(@"%i", [sender indexOfSelectedItem]);
+    NSLog(@"%lu", [sender indexOfSelectedItem]);
 }
 
 @end

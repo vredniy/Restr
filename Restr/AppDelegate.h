@@ -12,7 +12,7 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
     IBOutlet NSMenu *statusMenu;
     NSStatusItem *statusItem;
-    Timer *timer;
+    //Timer *timer;
 }
 
 @property (strong) NSWindowController *settingsWindowController;

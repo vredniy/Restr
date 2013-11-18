@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		717C1E15183A422A00BB3CCD /* DZWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 717C1E10183A422A00BB3CCD /* DZWindowController.m */; };
+		717C1E16183A422A00BB3CCD /* DZWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 717C1E11183A422A00BB3CCD /* DZWindowController.xib */; };
+		717C1E17183A422A00BB3CCD /* DZTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 717C1E13183A422A00BB3CCD /* DZTimer.m */; };
+		717C1E18183A422A00BB3CCD /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 717C1E14183A422A00BB3CCD /* 1.jpg */; };
 		7190DB9718365C5F0053A408 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7190DB9618365C5F0053A408 /* Images.xcassets */; };
 		71FB5CC318369A5500615C86 /* SettingsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FB5CC118369A5500615C86 /* SettingsWindowController.m */; };
 		71FB5CC418369A5500615C86 /* SettingsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71FB5CC218369A5500615C86 /* SettingsWindowController.xib */; };
@@ -34,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		717C1E0F183A422A00BB3CCD /* DZWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZWindowController.h; sourceTree = "<group>"; };
+		717C1E10183A422A00BB3CCD /* DZWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZWindowController.m; sourceTree = "<group>"; };
+		717C1E11183A422A00BB3CCD /* DZWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZWindowController.xib; sourceTree = "<group>"; };
+		717C1E12183A422A00BB3CCD /* DZTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZTimer.h; sourceTree = "<group>"; };
+		717C1E13183A422A00BB3CCD /* DZTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZTimer.m; sourceTree = "<group>"; };
+		717C1E14183A422A00BB3CCD /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		7190DB9618365C5F0053A408 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		71FB5CC018369A5500615C86 /* SettingsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsWindowController.h; sourceTree = "<group>"; };
 		71FB5CC118369A5500615C86 /* SettingsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsWindowController.m; sourceTree = "<group>"; };
@@ -81,6 +91,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		717C1E19183A423600BB3CCD /* ShortBreak */ = {
+			isa = PBXGroup;
+			children = (
+				717C1E0F183A422A00BB3CCD /* DZWindowController.h */,
+				717C1E10183A422A00BB3CCD /* DZWindowController.m */,
+				717C1E11183A422A00BB3CCD /* DZWindowController.xib */,
+				717C1E12183A422A00BB3CCD /* DZTimer.h */,
+				717C1E13183A422A00BB3CCD /* DZTimer.m */,
+				717C1E14183A422A00BB3CCD /* 1.jpg */,
+			);
+			name = ShortBreak;
+			sourceTree = "<group>";
+		};
 		71FC1D4818364C0100012474 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +155,7 @@
 				71FB5CC218369A5500615C86 /* SettingsWindowController.xib */,
 				71FB5CC51836B1CA00615C86 /* Timer.h */,
 				71FB5CC61836B1CA00615C86 /* Timer.m */,
+				717C1E19183A423600BB3CCD /* ShortBreak */,
 				71FC1D5B18364C0200012474 /* Supporting Files */,
 			);
 			path = Restr;
@@ -246,8 +270,10 @@
 				71FC1D5F18364C0200012474 /* InfoPlist.strings in Resources */,
 				71FB5CC418369A5500615C86 /* SettingsWindowController.xib in Resources */,
 				7190DB9718365C5F0053A408 /* Images.xcassets in Resources */,
+				717C1E16183A422A00BB3CCD /* DZWindowController.xib in Resources */,
 				71FC1D6518364C0200012474 /* Credits.rtf in Resources */,
 				71FC1D6B18364C0200012474 /* MainMenu.xib in Resources */,
+				717C1E18183A422A00BB3CCD /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +294,8 @@
 			files = (
 				71FC1D6818364C0200012474 /* AppDelegate.m in Sources */,
 				71FB5CC318369A5500615C86 /* SettingsWindowController.m in Sources */,
+				717C1E15183A422A00BB3CCD /* DZWindowController.m in Sources */,
+				717C1E17183A422A00BB3CCD /* DZTimer.m in Sources */,
 				71FC1D6118364C0200012474 /* main.m in Sources */,
 				71FB5CC71836B1CA00615C86 /* Timer.m in Sources */,
 			);
