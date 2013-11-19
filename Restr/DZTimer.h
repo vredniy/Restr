@@ -7,11 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Settings.h"
 
 @interface DZTimer : NSObject {
     NSTimer *currentTimer;
     
     NSNib *nib;
+    
+    NSInteger shortBreaksEveryValue;
+    NSInteger shortBreaksForValue;
+    
+    Settings *settings;
+    
 }
 @property (strong) NSWindowController *wc;
 @property NSWindow *window;
@@ -28,4 +35,9 @@
 
 - (void)stopFirstTimer;
 - (void)stopSecondTimer;
+
+- (void)restartTimer;
+
++ (DZTimer *)sharedInstance;
+
 @end

@@ -10,6 +10,8 @@
 #import "SettingsWindowController.h"
 #import "DZTimer.h"
 
+#import "Settings.h"
+
 @implementation AppDelegate
 
 @synthesize settingsWindowController;
@@ -33,8 +35,9 @@
 //    timer.callee = self;
 //    timer.selector = @selector(shortBreak:);
 //    [timer restart];
-    [[[DZTimer alloc] init] startFirstTimer];
+    [[DZTimer sharedInstance] restartTimer];
     
+    //NSLog(@"%d", [@"15 minutes" intValue]);
 }
 
 //- (void)shortBreak:(id)sender

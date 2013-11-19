@@ -17,15 +17,40 @@
 -(id)init
 {
     self = [super initWithWindowNibName:@"SettingsWindowController" owner:self];
+    
+    if (self) {
+        settings = [Settings sharedInstance];
+    }
+    
     return self;
 }
 
-- (IBAction)saveAndCloseClicked:(id)sender {
-    //NSLog(@"%i", self.doShortBreaksCheck.state == NSOnState);
-    NSLog(@"%@", self.shortBreaksEverySelect.stringValue);
-}
-- (IBAction)shortBreaksEverySelectClicked:(id)sender {
-    NSLog(@"%lu", [sender indexOfSelectedItem]);
+- (void)windowDidLoad {
+    [self.shortBreaksEverySelect removeAllItems];
+    [self.shortBreaksEverySelect addItemsWithTitles:[settings shortBreaksEveryValues]];
+    
+    [self.shortBreaksForSelect removeAllItems];
+    [self.shortBreaksForSelect addItemsWithTitles:[settings shortBreaksForValues]];
+    
+    [self.shortBreaksForSelect selectItemAtIndex:[settings shortBreaksForValue]];
+    
+    [self.shortBreaksEverySelect selectItemAtIndex:[settings shortBreaksEveryValue]];
 }
 
+- (IBAction)shortBreaksEverySelectClicked:(id)sender {
+    [settings setShortBreaksEveryValue:[sender indexOfSelectedItem]];
+    NSLog(@"everySelectClicked value = %ld", (long)[sender indexOfSelectedItem]);
+    [self restartTimer];
+}
+
+- (IBAction)shortBreaksForSelectClicked:(id)sender {
+    [settings setShortBreaksForValue:[sender indexOfSelectedItem]];
+    NSLog(@"forSelectClicked value = %ld", (long)[sender indexOfSelectedItem]);
+    [self restartTimer];
+}
+
+- (void)restartTimer
+{
+    [[DZTimer sharedInstance] restartTimer];
+}
 @end

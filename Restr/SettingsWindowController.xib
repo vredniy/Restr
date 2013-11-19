@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="doShortBreaksCheck" destination="6vC-x1-dAa" id="EjV-8S-wr5"/>
                 <outlet property="shortBreaksEverySelect" destination="dgJ-vp-XYr" id="uIz-xI-sAM"/>
+                <outlet property="shortBreaksForSelect" destination="CSJ-R2-L2Q" id="gop-pj-BuH"/>
                 <outlet property="window" destination="1" id="3"/>
             </connections>
         </customObject>
@@ -34,12 +35,12 @@
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dgJ-vp-XYr">
                         <rect key="frame" x="182" y="226" width="105" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <popUpButtonCell key="cell" type="push" title="15 minutes" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" selectedItem="uA2-s1-kgW" id="bR3-Ek-NCB">
+                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" borderStyle="border" inset="2" id="bR3-Ek-NCB">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="3rS-R8-R7X">
                                 <items>
-                                    <menuItem title="15 minutes" state="on" id="uA2-s1-kgW"/>
+                                    <menuItem title="15 minutes" id="uA2-s1-kgW"/>
                                     <menuItem title="20 minutes" id="7le-cP-1Ha"/>
                                     <menuItem title="30 minutes" id="Oki-2q-6EA"/>
                                 </items>
@@ -61,12 +62,12 @@
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CSJ-R2-L2Q">
                         <rect key="frame" x="317" y="226" width="98" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <popUpButtonCell key="cell" type="push" title="5 seconds" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="wL2-g0-EX6" id="7jf-8v-LuL">
+                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="7jf-8v-LuL">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="wZN-fg-U8n">
                                 <items>
-                                    <menuItem title="5 seconds" state="on" id="wL2-g0-EX6">
+                                    <menuItem title="5 seconds" id="wL2-g0-EX6">
                                         <modifierMask key="keyEquivalentModifierMask"/>
                                     </menuItem>
                                     <menuItem title="10 seconds" id="Sfw-PG-FTf"/>
@@ -76,18 +77,10 @@
                                 </items>
                             </menu>
                         </popUpButtonCell>
-                    </popUpButton>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kbO-GA-PLc">
-                        <rect key="frame" x="14" y="13" width="134" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="Save and Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NBJ-vr-SbQ">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
                         <connections>
-                            <action selector="saveAndCloseClicked:" target="-2" id="QMT-2g-aS0"/>
+                            <action selector="shortBreaksForSelectClicked:" target="-2" id="lIx-v3-Jli"/>
                         </connections>
-                    </button>
+                    </popUpButton>
                 </subviews>
             </view>
             <connections>

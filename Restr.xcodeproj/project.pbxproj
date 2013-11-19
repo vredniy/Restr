@@ -11,6 +11,7 @@
 		717C1E16183A422A00BB3CCD /* DZWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 717C1E11183A422A00BB3CCD /* DZWindowController.xib */; };
 		717C1E17183A422A00BB3CCD /* DZTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 717C1E13183A422A00BB3CCD /* DZTimer.m */; };
 		717C1E18183A422A00BB3CCD /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 717C1E14183A422A00BB3CCD /* 1.jpg */; };
+		71891DE3183BE5CC00670A61 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 71891DE2183BE5CC00670A61 /* Settings.m */; };
 		7190DB9718365C5F0053A408 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7190DB9618365C5F0053A408 /* Images.xcassets */; };
 		71FB5CC318369A5500615C86 /* SettingsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FB5CC118369A5500615C86 /* SettingsWindowController.m */; };
 		71FB5CC418369A5500615C86 /* SettingsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71FB5CC218369A5500615C86 /* SettingsWindowController.xib */; };
@@ -44,6 +45,8 @@
 		717C1E12183A422A00BB3CCD /* DZTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZTimer.h; sourceTree = "<group>"; };
 		717C1E13183A422A00BB3CCD /* DZTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZTimer.m; sourceTree = "<group>"; };
 		717C1E14183A422A00BB3CCD /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		71891DE1183BE5CC00670A61 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		71891DE2183BE5CC00670A61 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 		7190DB9618365C5F0053A408 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		71FB5CC018369A5500615C86 /* SettingsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsWindowController.h; sourceTree = "<group>"; };
 		71FB5CC118369A5500615C86 /* SettingsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsWindowController.m; sourceTree = "<group>"; };
@@ -157,6 +160,8 @@
 				71FB5CC61836B1CA00615C86 /* Timer.m */,
 				717C1E19183A423600BB3CCD /* ShortBreak */,
 				71FC1D5B18364C0200012474 /* Supporting Files */,
+				71891DE1183BE5CC00670A61 /* Settings.h */,
+				71891DE2183BE5CC00670A61 /* Settings.m */,
 			);
 			path = Restr;
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 				717C1E17183A422A00BB3CCD /* DZTimer.m in Sources */,
 				71FC1D6118364C0200012474 /* main.m in Sources */,
 				71FB5CC71836B1CA00615C86 /* Timer.m in Sources */,
+				71891DE3183BE5CC00670A61 /* Settings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
