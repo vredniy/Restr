@@ -54,7 +54,13 @@
 - (BOOL)isShortBreaksEnabled
 {
     if (!_shortBreaksEnabled) {
-        _shortBreaksEnabled = [userDefaults boolForKey:@"shortBreaksEnabled"];
+        BOOL defaultValue = [userDefaults boolForKey:@"shortBreaksEnabled"];
+        
+        if (defaultValue == YES || defaultValue == NO) {
+            _shortBreaksEnabled = defaultValue;
+        } else {
+            _shortBreaksEnabled = YES;
+        }
     }
     
     return _shortBreaksEnabled;
@@ -92,7 +98,7 @@
 
 - (NSArray *)shortBreaksEveryValues
 {
-    return @[@"15 minutes", @"20 minutes", @"30 minutes"];
+    return @[@"3 minutes", @"15 minutes", @"20 minutes", @"30 minutes"];
 }
 
 - (NSArray*)shortBreaksForValues

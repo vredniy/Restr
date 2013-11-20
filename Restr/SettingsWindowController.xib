@@ -31,6 +31,9 @@
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="shortBreaksEnabledClicked:" target="-2" id="8k5-Nr-qPP"/>
+                        </connections>
                     </button>
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dgJ-vp-XYr">
                         <rect key="frame" x="182" y="226" width="105" height="26"/>

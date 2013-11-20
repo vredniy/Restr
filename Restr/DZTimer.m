@@ -55,7 +55,13 @@
     
     
     NSLog(@"everyValue = %ld, forValue = %ld", (long)shortBreaksEveryValue, (long)shortBreaksForValue);
-    [self startFirstTimer];
+    
+    if ([settings shortBreaksEnabled]) {
+        [self startFirstTimer];
+    } else {
+        [currentTimer invalidate];
+        currentTimer = nil;
+    }
 }
 
 - (void)startFirstTimer

@@ -35,6 +35,8 @@
     [self.shortBreaksForSelect selectItemAtIndex:[settings shortBreaksForValue]];
     
     [self.shortBreaksEverySelect selectItemAtIndex:[settings shortBreaksEveryValue]];
+    
+    self.doShortBreaksCheck.state = [settings shortBreaksEnabled] == YES ? NSOnState : NSOffState;
 }
 
 - (IBAction)shortBreaksEverySelectClicked:(id)sender {
@@ -46,6 +48,13 @@
 - (IBAction)shortBreaksForSelectClicked:(id)sender {
     [settings setShortBreaksForValue:[sender indexOfSelectedItem]];
     NSLog(@"forSelectClicked value = %ld", (long)[sender indexOfSelectedItem]);
+    [self restartTimer];
+}
+
+- (IBAction)shortBreaksEnabledClicked:(NSButton *)sender {
+    [settings setShortBreaksEnabled:(sender.state == NSOnState)];
+    
+    NSLog(@"for Enabled Clicked value = %d", sender.state == NSOnState);
     [self restartTimer];
 }
 
