@@ -22,6 +22,7 @@
         NSLog(@"DZTimer initialization");
         sharedInstance = [[DZTimer alloc] init];
         sharedInstance->settings = [Settings sharedInstance];
+        NSLog(@"short Breaks enabled while start %i", [sharedInstance->settings shortBreaksEnabled]);
         // Do any other initialisation stuff here
     });
     
@@ -48,6 +49,9 @@
     }
     
     [settings sync];
+    
+    if (wc)
+        [wc close];
     
     NSLog(@"settings shortBreaksEveryValues = %@", [settings shortBreaksEveryValues][[settings shortBreaksEveryValue]]);
     shortBreaksEveryValue = [[settings shortBreaksEveryValues][[settings shortBreaksEveryValue]] intValue];// * 60 for minutes;

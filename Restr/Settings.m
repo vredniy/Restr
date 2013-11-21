@@ -51,8 +51,9 @@
     _shortBreaksForValue = shortBreaksForValue;
 }
 
-- (BOOL)isShortBreaksEnabled
+- (BOOL)shortBreaksEnabled
 {
+    NSLog(@"[%@] shortBreaksEnabled = %d", NSStringFromSelector(_cmd), _shortBreaksEnabled);
     if (!_shortBreaksEnabled) {
         BOOL defaultValue = [userDefaults boolForKey:@"shortBreaksEnabled"];
         
@@ -68,8 +69,10 @@
 
 - (void)setShortBreaksEnabled:(BOOL)shortBreaksEnabled
 {
+    NSLog(@"[%@] shortBreaksEnabled = %d", NSStringFromSelector(_cmd), shortBreaksEnabled);
     [userDefaults setBool:shortBreaksEnabled forKey:@"shortBreaksEnabled"];
     [userDefaults synchronize];
+    NSLog(@"[%@] shortBreaksEnabled = %d", NSStringFromSelector(_cmd), [userDefaults boolForKey:@"shortBreaksEnabled"]);
     _shortBreaksEnabled = shortBreaksEnabled;
 }
 

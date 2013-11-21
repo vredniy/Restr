@@ -37,6 +37,8 @@
 //    [timer restart];
     [[DZTimer sharedInstance] restartTimer];
     
+
+    
     //NSLog(@"%d", [@"15 minutes" intValue]);
 }
 
