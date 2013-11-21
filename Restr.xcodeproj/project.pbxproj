@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71093BA9183E81F0009C6BF2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 71093BA8183E81F0009C6BF2 /* README.md */; };
 		717C1E15183A422A00BB3CCD /* DZWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 717C1E10183A422A00BB3CCD /* DZWindowController.m */; };
 		717C1E16183A422A00BB3CCD /* DZWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 717C1E11183A422A00BB3CCD /* DZWindowController.xib */; };
 		717C1E17183A422A00BB3CCD /* DZTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 717C1E13183A422A00BB3CCD /* DZTimer.m */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		71093BA8183E81F0009C6BF2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		717C1E0F183A422A00BB3CCD /* DZWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZWindowController.h; sourceTree = "<group>"; };
 		717C1E10183A422A00BB3CCD /* DZWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZWindowController.m; sourceTree = "<group>"; };
 		717C1E11183A422A00BB3CCD /* DZWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZWindowController.xib; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		71FC1D4818364C0100012474 = {
 			isa = PBXGroup;
 			children = (
+				71093BA8183E81F0009C6BF2 /* README.md */,
 				71FC1D5A18364C0200012474 /* Restr */,
 				71FC1D7818364C0200012474 /* RestrTests */,
 				71FC1D5318364C0200012474 /* Frameworks */,
@@ -278,6 +281,7 @@
 				717C1E16183A422A00BB3CCD /* DZWindowController.xib in Resources */,
 				71FC1D6518364C0200012474 /* Credits.rtf in Resources */,
 				71FC1D6B18364C0200012474 /* MainMenu.xib in Resources */,
+				71093BA9183E81F0009C6BF2 /* README.md in Resources */,
 				717C1E18183A422A00BB3CCD /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
