@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		71093BA9183E81F0009C6BF2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 71093BA8183E81F0009C6BF2 /* README.md */; };
+		71093BAB183E89FD009C6BF2 /* Restr ShortBreak with Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 71093BAA183E89FD009C6BF2 /* Restr ShortBreak with Settings.png */; };
 		717C1E15183A422A00BB3CCD /* DZWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 717C1E10183A422A00BB3CCD /* DZWindowController.m */; };
 		717C1E16183A422A00BB3CCD /* DZWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 717C1E11183A422A00BB3CCD /* DZWindowController.xib */; };
 		717C1E17183A422A00BB3CCD /* DZTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 717C1E13183A422A00BB3CCD /* DZTimer.m */; };
@@ -16,7 +17,6 @@
 		7190DB9718365C5F0053A408 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7190DB9618365C5F0053A408 /* Images.xcassets */; };
 		71FB5CC318369A5500615C86 /* SettingsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FB5CC118369A5500615C86 /* SettingsWindowController.m */; };
 		71FB5CC418369A5500615C86 /* SettingsWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71FB5CC218369A5500615C86 /* SettingsWindowController.xib */; };
-		71FB5CC71836B1CA00615C86 /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FB5CC61836B1CA00615C86 /* Timer.m */; };
 		71FC1D5518364C0200012474 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FC1D5418364C0200012474 /* Cocoa.framework */; };
 		71FC1D5F18364C0200012474 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71FC1D5D18364C0200012474 /* InfoPlist.strings */; };
 		71FC1D6118364C0200012474 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71FC1D6018364C0200012474 /* main.m */; };
@@ -41,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		71093BA8183E81F0009C6BF2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		71093BAA183E89FD009C6BF2 /* Restr ShortBreak with Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Restr ShortBreak with Settings.png"; sourceTree = SOURCE_ROOT; };
 		717C1E0F183A422A00BB3CCD /* DZWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZWindowController.h; sourceTree = "<group>"; };
 		717C1E10183A422A00BB3CCD /* DZWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZWindowController.m; sourceTree = "<group>"; };
 		717C1E11183A422A00BB3CCD /* DZWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZWindowController.xib; sourceTree = "<group>"; };
@@ -53,8 +54,6 @@
 		71FB5CC018369A5500615C86 /* SettingsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsWindowController.h; sourceTree = "<group>"; };
 		71FB5CC118369A5500615C86 /* SettingsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsWindowController.m; sourceTree = "<group>"; };
 		71FB5CC218369A5500615C86 /* SettingsWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsWindowController.xib; sourceTree = "<group>"; };
-		71FB5CC51836B1CA00615C86 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
-		71FB5CC61836B1CA00615C86 /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
 		71FC1D5118364C0200012474 /* Restr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71FC1D5418364C0200012474 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		71FC1D5718364C0200012474 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -96,6 +95,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71093BAC183E8A14009C6BF2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				71093BAA183E89FD009C6BF2 /* Restr ShortBreak with Settings.png */,
+				717C1E14183A422A00BB3CCD /* 1.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		717C1E19183A423600BB3CCD /* ShortBreak */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +112,6 @@
 				717C1E11183A422A00BB3CCD /* DZWindowController.xib */,
 				717C1E12183A422A00BB3CCD /* DZTimer.h */,
 				717C1E13183A422A00BB3CCD /* DZTimer.m */,
-				717C1E14183A422A00BB3CCD /* 1.jpg */,
 			);
 			name = ShortBreak;
 			sourceTree = "<group>";
@@ -152,6 +159,7 @@
 		71FC1D5A18364C0200012474 /* Restr */ = {
 			isa = PBXGroup;
 			children = (
+				71093BAC183E8A14009C6BF2 /* Images */,
 				7190DB9618365C5F0053A408 /* Images.xcassets */,
 				71FC1D6618364C0200012474 /* AppDelegate.h */,
 				71FC1D6718364C0200012474 /* AppDelegate.m */,
@@ -159,8 +167,6 @@
 				71FB5CC018369A5500615C86 /* SettingsWindowController.h */,
 				71FB5CC118369A5500615C86 /* SettingsWindowController.m */,
 				71FB5CC218369A5500615C86 /* SettingsWindowController.xib */,
-				71FB5CC51836B1CA00615C86 /* Timer.h */,
-				71FB5CC61836B1CA00615C86 /* Timer.m */,
 				717C1E19183A423600BB3CCD /* ShortBreak */,
 				71FC1D5B18364C0200012474 /* Supporting Files */,
 				71891DE1183BE5CC00670A61 /* Settings.h */,
@@ -275,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71093BAB183E89FD009C6BF2 /* Restr ShortBreak with Settings.png in Resources */,
 				71FC1D5F18364C0200012474 /* InfoPlist.strings in Resources */,
 				71FB5CC418369A5500615C86 /* SettingsWindowController.xib in Resources */,
 				7190DB9718365C5F0053A408 /* Images.xcassets in Resources */,
@@ -306,7 +313,6 @@
 				717C1E15183A422A00BB3CCD /* DZWindowController.m in Sources */,
 				717C1E17183A422A00BB3CCD /* DZTimer.m in Sources */,
 				71FC1D6118364C0200012474 /* main.m in Sources */,
-				71FB5CC71836B1CA00615C86 /* Timer.m in Sources */,
 				71891DE3183BE5CC00670A61 /* Settings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
