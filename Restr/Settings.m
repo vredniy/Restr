@@ -101,7 +101,7 @@
 
 - (NSArray *)shortBreaksEveryValues
 {
-    return @[@"3 minutes", @"15 minutes", @"20 minutes", @"30 minutes"];
+    return @[@"1 minute", @"15 minutes", @"20 minutes", @"30 minutes"];
 }
 
 - (NSArray*)shortBreaksForValues
