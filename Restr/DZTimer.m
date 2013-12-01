@@ -54,7 +54,7 @@
         [wc close];
     
     NSLog(@"settings shortBreaksEveryValues = %@", [settings shortBreaksEveryValues][[settings shortBreaksEveryValue]]);
-    shortBreaksEveryValue = [[settings shortBreaksEveryValues][[settings shortBreaksEveryValue]] intValue];//* 60; //for minutes;
+    shortBreaksEveryValue = [[settings shortBreaksEveryValues][[settings shortBreaksEveryValue]] intValue] * 60; //for minutes;
     shortBreaksForValue = [[settings shortBreaksForValues][[settings shortBreaksForValue]] intValue];
     
     
@@ -84,6 +84,7 @@
     wc = [[DZWindowController alloc] initWithWindowNibName:@"DZWindowController"];
     
     [wc.window makeKeyAndOrderFront:self];
+    [NSApp activateIgnoringOtherApps:YES];
     //[wc.window setOrderedIndex:0];
     //[wc showWindow:self];
     //[wc.window ord]
@@ -94,6 +95,7 @@
 
 - (void)stopSecondTimer
 {
+    [NSApp activateIgnoringOtherApps:NO];
     [wc close];
     NSLog(@"stop showing message");
     [self startFirstTimer];
